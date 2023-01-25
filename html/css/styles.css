@@ -442,6 +442,10 @@ body {
         display: none;
     }
 
+    .column.col1 .menu li a i {
+        display: none;
+    } 
+
     .column.col1 {
         padding: 0;
         border-bottom: 0;
@@ -455,6 +459,18 @@ body {
 
     .column.col1 .menu ul li {
         flex: 1 1 30%;
+        text-align: center;
+        border-radius: 1px solid #dbdbdb;
+        box-sizing: border-box;
+    }
+
+    .column.col1 .menu ul li:nth-child(3n) {
+        border-radius: 0;
+    }
+
+    .column.col1 .menu ul li a {
+        color: #fff;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
     }
 }
 
