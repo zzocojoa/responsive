@@ -17,6 +17,7 @@ body {
 
 #contents {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
@@ -324,9 +325,22 @@ body {
         margin: 25px 0;
     }
 
+    #contents {
+        flex-wrap: wrap;
+        flex: 1 1 60%;
+    }
+
+    /* #cont-left {
+        flex-grow: ;
+    }
+
+    #cont-center {
+
+    }
+
     #cont-right {
         flex-direction: column;
-    }
+    } */
 }
 
 /* 0 ~ 768px */
