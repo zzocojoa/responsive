@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- styles -->
-    <link rel="stylesheet" href="../html/css/reset.css">
-    <link rel="stylesheet" href="/html/css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article" />
@@ -26,7 +26,7 @@
     <meta property="twitter:image" content="" />
 
     <!-- favicon -->
-    <link rel="icon" href="/icon/favicon.ico">
+    <link rel="icon" href="./icon/favicon.ico">
 
     <!-- web font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
                     </div>
                     <!-- header-menu -->
                     <div class="header-tit">
-                        <h1>Professional Web Publihser</h1><br>
+                        <h1>Professional Web Publisher</h1><br>
                         <a href="https://zzcojoa.tistory.com/">zzcojoa.tistory.com</a>
                     </div>
                     <!-- header-tit -->
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="nav">
                     <h2 class="ir-su">반응형 사이트 전체 메뉴</h2>
-                    <div>
+                    <div class="content">
                         <h3>HTML Reference</h3>
                         <ol>
                             <li><a href="#">HTML 태그(Tag)</a></li>
@@ -105,60 +105,106 @@
                             <li><a href="#">HTML &lt;caption&gt;</a></li>
                         </ol>
                     </div>
+                    <div class="content">
+                        <h3>CSS Reference</h3>
+                        <ol>
+                            <li><a href="#">CSS 선택자</a></li>
+                            <li><a href="#">CSS 단위</a></li>
+                            <li><a href="#">CSS 색상</a></li>
+                            <li><a href="#">CSS 선언 방법</a></li>
+                            <li><a href="#">상대주소와 절대주소</a></li>
+                            <li><a href="#">CSS float</a></li>
+                            <li><a href="#">이미지 표현 방법</a></li>
+                            <li><a href="#">이미지 스프라이트</a></li>
+                            <li><a href="#">IR 효과</a></li>
+                            <li><a href="#">이미지 최적화</a></li>
+                            <li><a href="#">background-color</a></li>
+                            <li><a href="#">border-style</a></li>
+                            <li><a href="#">font-size</a></li>
+                            <li><a href="#">text-align</a></li>
+                        </ol>
+                    </div>
+                    <div class="content last">
+                        <h3>Webstandard</h3>
+                        <ol>
+                            <li><a href="#">웹 표준</a></li>
+                            <li><a href="#">웹 접근성</a></li>
+                            <li><a href="#">W3C</a></li>
+                            <li><a href="#">웹 접근성 연구소</a></li>
+                            <li><a href="#">네이버 널리</a></li>
+                            <li><a href="#">다음 다룸</a></li>
+                            <li><a href="#">Webstandard</a></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-    <article>
-        <h2>반응형 사이트 서브 타이틀</h2>
+    <!-- nav -->
+    <article id="title">
+        <div class="container">
+            <div class="title">
+                <h2>ALDO</h2>
+                <a href="#" class="btn">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <span class="ir-su">전체 메뉴 보기</span>
+                </a>
+            </div>
+        </div>
     </article>
+    <!-- title -->
     <main>
-        <section>
-            <h2>반응형 사이트 컨텐츠</h2>
-            <section>
-                <h3>반응형 사이트 왼쪽 컨텐츠</h3>
-                <article>
-                    <h4>반응형 사이트 왼쪽 컨텐츠1</h4>
-                </article>
-                <article>
-                    <h4>반응형 사이트 왼쪽 컨텐츠2</h4>
-                </article>
-                <article>
-                    <h4>반응형 사이트 왼쪽 컨텐츠3</h4>
-                </article>
-            </section>
-            <section>
-                <h3>반응형 사이트 가운데 컨텐츠</h3>
-                <article>
-                    <h4>반응형 사이트 가운데 컨텐츠1</h4>
-                </article>
-                <article>
-                    <h4>반응형 사이트 가운데 컨텐츠2</h4>
-                </article>
-                <article>
-                    <h4>반응형 사이트 가운데 컨텐츠3</h4>
-                </article>
-            </section>
-            <section>
-                <h3>반응형 사이트 오른쪽 컨텐츠</h3>
-                <article>
-                    <h4>반응형 사이트 오른쪽 컨텐츠1</h4>
-                </article>
-                <article>
-                    <h4>반응형 사이트 오른쪽 컨텐츠2</h4>
-                </article>
-                <article>
-                    <h4>반응형 사이트 오른쪽 컨텐츠3</h4>
-                </article>
-            </section>
+        <section id="contents">
+            <div class="container">
+                <h2 class="ir-su">반응형 사이트 컨텐츠</h2>
+                <section id="cont-left">
+                    <h3 class="ir-su">반응형 사이트 왼쪽 컨텐츠</h3>
+                    <article class="column col1">
+                        <h4>반응형 사이트 왼쪽 컨텐츠1</h4>
+                    </article>
+                    <article class="column col2">
+                        <h4>반응형 사이트 왼쪽 컨텐츠2</h4>
+                    </article>
+                    <article class="column col3">
+                        <h4>반응형 사이트 왼쪽 컨텐츠3</h4>
+                    </article>
+                </section>
+                <section id="cont-center">
+                    <h3 class="ir-su">반응형 사이트 가운데 컨텐츠</h3>
+                    <article class="column col4">
+                        <h4>반응형 사이트 가운데 컨텐츠1</h4>
+                    </article>
+                    <article class="column col5">
+                        <h4>반응형 사이트 가운데 컨텐츠2</h4>
+                    </article>
+                    <article class="column col6">
+                        <h4>반응형 사이트 가운데 컨텐츠3</h4>
+                    </article>
+                </section>
+                <section id="cont-right">
+                    <h3 class="ir-su">반응형 사이트 오른쪽 컨텐츠</h3>
+                    <article class="column col7">
+                        <h4>반응형 사이트 오른쪽 컨텐츠1</h4>
+                    </article>
+                    <article class="column col8">
+                        <h4>반응형 사이트 오른쪽 컨텐츠2</h4>
+                    </article>
+                    <article class="column col9">
+                        <h4>반응형 사이트 오른쪽 컨텐츠3</h4>
+                    </article>
+                </section>
+            </div>
         </section>
+        <!-- content -->
     </main>
-    <footer>
-        <h2>반응형 사이트 푸터</h2>
+    <footer id="footer">
+        <div class="container">
+            <h2>반응형 사이트 푸터</h2>
+        </div>
     </footer>
 
     <!-- JavaScript Libraries -->
-    <script src="/js/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
 
     <!-- fontawesome icon -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
