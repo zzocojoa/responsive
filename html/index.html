@@ -237,26 +237,26 @@
                         <h4 class="col-tit">Slick Slider</h4>
                         <p class="col-desc">Slick.js를 이용한 슬라이드 효과입니다.</p>
                         <!-- img-slider -->
-                        <!-- <div class="slider">
+                        <div class="slider">
                             <div>
                                 <figure>
-                                    <img src="./images/slider01.jpg" alt="이미지1">
-                                    <figcaption><em>Responsive site</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
+                                    <img src="./images/slider01.jpg" alt="image1">
+                                    <figcaption><em>Responsive site-1</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
-                                    <img src="./images/slider02.jpg" alt="이미지2">
-                                    <figcaption><em>Responsive site</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
+                                    <img src="./images/slider02.jpg" alt="image2">
+                                    <figcaption><em>Responsive site-2</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
-                                    <img src="./images/slider03.jpg" alt="이미지3">
-                                    <figcaption><em>Responsive site</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
+                                    <img src="./images/slider03.jpg" alt="image3">
+                                    <figcaption><em>Responsive site-3</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
                                 </figure>
                             </div>
-                        </div> -->
+                        </div>
                     </article>
                     <!-- col4 -->
                     <article class="column col5">
@@ -308,36 +308,20 @@
         </script>
 
     <script>
-        // $(".slider").slick({
-        //     dots: true,
-        //     autoplay: true,
-        //     autoplaySpeed: 3000,
-        //     // 화살표 제거
-        //     arrow: false,
-        //     // 반응형에 대한 코드
-        //     responsive: [
-        //         {
-        //             breakpoint: 768,
-        //             settings: {
-        //                 arrows:true,
-        //                 dots: false
-        //             }
-        //         }
- 
-        //     ]
-        // });
-
         $(".slider").slick({
             dots: true,
             autoplay: true,
             autoplaySpeed: 3000,
-            arrows: false,
+            // 화살표 표시 설정
+            arrows: true,
+            // 반응형에 대한 코드
             responsive: [
                 {
                     breakpoint: 768,
                     settings: {
                         arrows: true,
-                        dots: false
+                        dots: true,
+                        autoplay: false
                         }
                 }
             ]
