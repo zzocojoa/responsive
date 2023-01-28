@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/slick.css">
     <!-- <link rel="stylesheet" href="./css/lightgallery.css"> -->
-    <link rel="stylesheet" href="./css/lightgallery-bundle.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
 
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article">
@@ -405,7 +405,6 @@
     <script src="./js/jquery-3.6.3.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/lightgallery.min.js"></script>
-    <script src="./js/lightgallery.umd.js"></script>
 
     <!-- fontawesome icon -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -458,11 +457,18 @@
         });
 
         // light box
-        $(".lightbox").lightGallery({
-            // autoplay:true,
-            // pause: 3000,
-            // progress
-        });
+        // $(".lightbox").lightgallery({
+            
+        // });
+
+        // lightGallery(document.getElementById('.lightbox'), {
+        //         autoplay: 3000,
+        //         animateThumb: false,
+        //         zoomFromOrigin: false,
+        //         allowMediaOverlap: true,
+        //         toggleThumb: true,
+        //     });
+
 
         // sns 공유하기
         //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}

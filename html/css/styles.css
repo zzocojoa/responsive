@@ -787,10 +787,11 @@ only screen and (min-resolution: 3dppx) {
 .side2 figcaption {
     width: 60%;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Avel', monospace;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     padding: 3px 10px;
 }
 
