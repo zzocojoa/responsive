@@ -741,6 +741,10 @@ only screen and (min-resolution: 3dppx) {
     transform: translate(-50%, -50%);
 }
 
+.side1 .back .fa {
+    color: rgba(231, 42, 8, 0.8);
+}
+
 /* footer */
 .footer {
     text-align: center;
