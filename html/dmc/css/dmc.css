@@ -1,0 +1,238 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+/* nav */
+#nav {
+    position: fixed;
+    padding: 0 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav h1 {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Abel'
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    display: inline-block;
+    padding: 20px 15px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Abel';
+    text-transform: capitalize;
+}
+
+#nav ul li.active a {
+    color: #757575;
+}
+
+#contents {
+    /* text-align: center; */
+    color: #fff;
+}
+
+#contents>div {
+    height: 100vh;
+    /* line-height: 100vh; */
+}
+
+/* #contents>div:nth-child(2) { line-height: 100vh; } */
+/* #contents>div:nth-child(3) { line-height: 100vh; }
+#contents>div:nth-child(4) { line-height: 100vh; }
+#contents>div:nth-child(5) { line-height: 100vh; } */
+
+#contents>div h2 {
+    display: block;
+    font-size: 90px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#contents>div h2 strong {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* section */
+#section1 {
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    text-align: center;
+}
+
+#section2 {
+    background: radial-gradient(ellipse farthest-corner at center top, #cbf49a, #1ea623);
+    padding-left: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+#section3 {
+    background: radial-gradient(ellipse farthest-corner at center top, #ffee75, #ff8930);
+    padding-left: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+#section4 {
+    background: radial-gradient(ellipse farthest-corner at center bottom, #6beace, #2e9aa4);
+    padding-left: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+#section5 {
+    background: radial-gradient(ellipse farthest-corner at center bottom, #69d2fb 0%, #20438E 100%);
+    padding-left: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+#section1 .box1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#section1 .box1 h2 {
+    font-weight: 700;
+    font-style: italic;
+    line-height: 450px;
+}
+
+.text {
+    position: absolute;;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -10%);
+    line-height: 0;
+
+}
+
+.box h3 {
+    color: #d50000;
+    font-size: 150px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 30px;
+}
+
+
+#section2, #section3, #section4, #section5 h2 {
+    font-weight: 700;
+    font-style: italic;
+    line-height: 400px;
+}
+
+.progress{
+    text-align: center;
+    margin: 200px auto;
+    position: relative;
+    height: 50px;
+    width: 50%;
+    border: 10px solid #f4a261;
+    border-radius: 30px;
+}
+
+.progress::before {
+    line-height: normal;
+    position: absolute;
+    content: "550 ℃";
+    top: -50px;
+    right: 120px;
+}
+
+.progress::after {
+    line-height: normal;
+    position: absolute;
+    content: "580 ℃";
+    top: -50px;
+    right: -40px;
+}
+
+.progress .color{
+    position: absolute;
+    background-color: #ffffff;
+    /* background-color: rgb(216, 215, 215); */
+    /* background: radial-gradient(ellipse farthest-corner at center center, #ff6e7f 0%, #bfe9ff 100%); */
+    width: 0px;
+    height: 30px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;
+}
+
+#section5 .progress{
+    text-align: center;
+    margin: 200px auto;
+    position: relative;
+    height: 50px;
+    width: 50%;
+    border: 10px solid #f4a261;
+    border-radius: 30px;
+}
+
+#section5 .progress::before {
+    line-height: normal;
+    position: absolute;
+    content: "1.9 mm/s";
+    top: -50px;
+    right: 120px;
+}
+
+#section5 .progress::after {
+    line-height: normal;
+    position: absolute;
+    content: "2.3 mm/s";
+    top: -50px;
+    right: -40px;
+}
+
+#section5 .progress .color{
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    height: 30px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;
+}
+
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+        /* background-color: #ff4d4d; */
+    }
+    100%{
+        width: 100%;
+        background-color: #ff4d4d;
+    }
+};

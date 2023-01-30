@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- user-scalable=no(화면 확대 방지) -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 
     <!-- styles -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <!-- <link rel="stylesheet" href="./css/lightgallery.css"> -->
-    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link type="text/css" rel="stylesheet" href="./css/lightgallery.css">
 
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article">
@@ -173,8 +173,8 @@
                                 <li><a href="#">Tutorial <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="#">WebSite <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="#">Reference <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-                                <li><a href="#">CSS3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-                                <li><a href="#">HTML5 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                <li><a href="./parallax/parallax.html">Parallax <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                <li><a href="./dmc/dmc.html">Extrusion<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </article>
@@ -412,6 +412,11 @@
         </script>
 
     <script>
+        // light box
+        $(document).ready(function() {
+            $(".lightbox").lightGallery();
+        });
+
         // title menu slideToggle
         $(".btn").click(function (e) {
             e.preventDefault();
@@ -455,20 +460,6 @@
                 }
             ]
         });
-
-        // light box
-        // $(".lightbox").lightgallery({
-            
-        // });
-
-        // lightGallery(document.getElementById('.lightbox'), {
-        //         autoplay: 3000,
-        //         animateThumb: false,
-        //         zoomFromOrigin: false,
-        //         allowMediaOverlap: true,
-        //         toggleThumb: true,
-        //     });
-
 
         // sns 공유하기
         //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
