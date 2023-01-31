@@ -3,36 +3,40 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato';
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
 }
 
-main {
-    width: 100%;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* nav */
 #nav {
     position: fixed;
-    padding: 0 20px;
     left: 0;
     top: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #nav h1 {
+    float: left;
     color: #fff;
     font-size: 40px;
+    padding: 5px 5px 5px 15px;
     font-family: 'Abel'
 }
 
+#nav ul {
+    float: right;
+    padding-right: 10px;
+}
+
 #nav ul li {
-    display: inline-block;
+    display: inline;
 }
 
 #nav ul li a {
@@ -45,176 +49,183 @@ main {
 }
 
 #nav ul li.active a {
-    color: #757575;
+    color: gray;
+}
+
+#nav .mNav {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 65px;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    vertical-align: middle;
+    /* background-color: rgba(255,255,255,0.3); */
+}
+
+#nav .mNav .fa {
+    font-size: 45px;
+    color: #fff;
 }
 
 #contents {
-    /* text-align: center; */
+    text-align: center;
     color: #fff;
 }
 
 #contents>div {
     height: 100vh;
-    /* line-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 50px;
+    /* line-height: 50vh; */
 }
-
-/* #contents>div:nth-child(2) { line-height: 100vh; } */
-/* #contents>div:nth-child(3) { line-height: 100vh; }
-#contents>div:nth-child(4) { line-height: 100vh; }
-#contents>div:nth-child(5) { line-height: 100vh; } */
 
 #contents>div h2 {
-    display: block;
-    font-size: 90px;
-    font-weight: 100;
+    font-size: 6vw;
+    line-height: 38vh;
+    font-weight: bold;
     text-transform: uppercase;
+    font-style: italic;
 }
 
-#contents>div h2 strong {
-    font-weight: 700;
+#contents>div h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 8vw;
+    font-weight: bold;
     font-style: italic;
+    color: #ff6e7f;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
 }
 
 /* section */
 #section1 {
     background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
-    text-align: center;
 }
 
 #section2 {
     background: radial-gradient(ellipse farthest-corner at center top, #cbf49a, #1ea623);
-    padding-left: 50px;
-    position: relative;
-    z-index: -1;
 }
 
 #section3 {
     background: radial-gradient(ellipse farthest-corner at center top, #ffee75, #ff8930);
-    padding-left: 50px;
-    position: relative;
-    z-index: -1;
 }
 
 #section4 {
     background: radial-gradient(ellipse farthest-corner at center bottom, #6beace, #2e9aa4);
-    padding-left: 50px;
-    position: relative;
-    z-index: -1;
 }
 
 #section5 {
     background: radial-gradient(ellipse farthest-corner at center bottom, #69d2fb 0%, #20438E 100%);
-    padding-left: 50px;
+}
+
+#section6 {
+    background: radial-gradient(ellipse farthest-corner at center top, #6CEBCF 0%, #38a7aa 100%);
+}
+
+/* animation progress */
+.progress {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.frame{
+    margin: 0 auto;
     position: relative;
-    z-index: -1;
-}
-
-#section1 .box1 {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-
-#section1 .box1 h2 {
-    font-weight: 700;
-    font-style: italic;
-    line-height: 450px;
-}
-
-.text {
-    position: absolute;;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -10%);
-    line-height: 0;
-
-}
-
-.box h3 {
-    color: #d50000;
-    font-size: 150px;
-    font-weight: 700;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 30px;
-}
-
-
-#section2, #section3, #section4, #section5 h2 {
-    font-weight: 700;
-    font-style: italic;
-    line-height: 400px;
-}
-
-.progress{
-    text-align: center;
-    margin: 200px auto;
-    position: relative;
-    height: 50px;
-    width: 50%;
-    border: 10px solid #f4a261;
-    border-radius: 30px;
-}
-
-.progress::before {
-    line-height: normal;
-    position: absolute;
-    content: "550 ℃";
-    top: -50px;
-    right: 120px;
-}
-
-.progress::after {
-    line-height: normal;
-    position: absolute;
-    content: "580 ℃";
-    top: -50px;
-    right: -40px;
-}
-
-.progress .color{
-    position: absolute;
-    background-color: #ffffff;
-    /* background-color: rgb(216, 215, 215); */
-    /* background: radial-gradient(ellipse farthest-corner at center center, #ff6e7f 0%, #bfe9ff 100%); */
-    width: 0px;
     height: 30px;
-    border-radius: 15px;
-    animation: progres 4s infinite linear;
-}
-
-#section5 .progress{
-    text-align: center;
-    margin: 200px auto;
-    position: relative;
-    height: 50px;
     width: 50%;
     border: 10px solid #f4a261;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
-#section5 .progress::before {
-    line-height: normal;
-    position: absolute;
-    content: "1.9 mm/s";
-    top: -50px;
-    right: 120px;
-}
-
-#section5 .progress::after {
-    line-height: normal;
-    position: absolute;
-    content: "2.3 mm/s";
-    top: -50px;
-    right: -40px;
-}
-
-#section5 .progress .color{
+.frame .color{
     position: absolute;
     background-color: #ffffff;
     width: 0px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     animation: progres 4s infinite linear;
+}
+
+@media(max-width:1040px) {
+    #nav .menu {
+        display: none;
+    }
+
+    #nav .mNav {
+        display: block;
+    }
+
+    #nav h1 {
+        width: 100%;
+    }
+    #nav .menu {
+        padding-right: 0;
+        float: none;
+        text-align: center;
+    }
+    #nav .menu li {
+        width: 100%;
+        display: inline-block;
+    }
+    #nav .menu li.active {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    #contents > div h2 {
+        padding-top: 15px;
+        font-size: 6vw;
+        font-weight: 300;
+    }
+
+    #contents>div h3 {
+        font-size: 8vw;
+    }
+}
+
+@media(max-width:800px) {
+    #nav .menu {
+        display: none;
+    }
+
+    #nav .mNav {
+        display: block;
+    }
+
+    #nav h1 {
+        width: 100%;
+    }
+    #nav .menu {
+        padding-right: 0;
+        float: none;
+        text-align: center;
+    }
+    #nav .menu li {
+        width: 100%;
+        display: inline-block;
+    }
+    #nav .menu li.active {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    #contents > div h2 {
+        font-size: 6vw;
+        font-weight: 300;
+    }
+
+    #contents>div h3 {
+        font-size: 15vw;
+    }
+    
+    .frame {
+        width: 80%;
+    }
 }
 
 @keyframes progres{
@@ -229,10 +240,8 @@ main {
     }
     75%{
         width: 85%;
-        /* background-color: #ff4d4d; */
     }
     100%{
         width: 100%;
-        background-color: #ff4d4d;
     }
 };

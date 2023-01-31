@@ -60,7 +60,15 @@ a {
     width: 65px;
     height: 45px;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.3);
+    text-align: center;
+    line-height: 45px;
+    vertical-align: middle;
+    /* background-color: rgba(255,255,255,0.3); */
+}
+
+#nav .mNav .fa {
+    font-size: 45px;
+    color: #fff;
 }
 
 #contents {
@@ -116,5 +124,26 @@ a {
 
     #nav .mNav {
         display: block;
+    }
+
+    #nav h1 {
+        width: 100%;
+    }
+    #nav .menu {
+        padding-right: 0;
+        float: none;
+        text-align: center;
+    }
+    #nav .menu li {
+        width: 100%;
+        display: inline-block;
+    }
+    #nav .menu li.active {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    #contents > div h2 {
+        font-size: 6vw;
+        font-weight: 300;
     }
 }
